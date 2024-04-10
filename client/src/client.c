@@ -62,7 +62,7 @@ int main(void)
 
 t_log* iniciar_logger(void)
 {
-    t_log* nuevo_logger = log_create("/home/utnso/tp0/client/tp0.log","LOG",true,LOG_LEVEL_INFO);
+    t_log* nuevo_logger = log_create("tp0.log","LOG",true,LOG_LEVEL_INFO);
 
     if(nuevo_logger == NULL){
         printf("No se puede crear el logger\n");
@@ -74,7 +74,7 @@ t_log* iniciar_logger(void)
 
 t_config* iniciar_config(void)
 {
-	t_config* nuevo_config = config_create("/home/utnso/tp0/client/cliente.config");
+	t_config* nuevo_config = config_create("cliente.config");
 	if(nuevo_config == NULL){
         printf("No se pudo encontrar la config\n");
         exit(EXIT_FAILURE);
