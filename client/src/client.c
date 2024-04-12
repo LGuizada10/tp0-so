@@ -29,7 +29,7 @@ int main(void)
 	// Usando el config creado previamente, leemos los valores del config y los 
 	// dejamos en las variables 'ip', 'puerto' y 'valor'
 	valor = config_get_string_value(config,"CLAVE");	//LA funcion devuelve un string
-	ip="192.168.0.18";  //config_get_string_value(config,"IP");
+	ip=config_get_string_value(config,"IP");
 	puerto=config_get_string_value(config,"PUERTO");
 
 	// Loggeamos el valor de config
